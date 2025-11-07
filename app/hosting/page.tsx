@@ -1,23 +1,25 @@
 import Navbar from "@/app/components/Navbar";
-import Hero from "@/app/components/Hero";
+import HeroHosting from "@/app/components/HeroHosting";
 import PartnerBrands from "@/app/components/PartnerBrands";
 import HostingServices from "@/app/components/HostingServices";
 import Stats from "@/app/components/Stats";
 import Features from "@/app/components/Features";
 import BuiltByExperts from "@/app/components/BuiltByExperts";
 import SmarterTools from "@/app/components/SmarterTools";
+import PricingPlans from "@/app/components/PricingPlans";
 import Testimonials from "@/app/components/Testimonials";
 import BehindTheBrand from "@/app/components/BehindTheBrand";
 import TechSupport from "@/app/components/TechSupport";
 import BlogPosts from "@/app/components/BlogPosts";
 import Footer from "@/app/components/Footer";
 
-export default function Home() {
+export default function HostingPage() {
   return (
     <div className="flex flex-col min-h-screen font-display">
         <Navbar/>
-        <Hero/>
+        <HeroHosting/>
         <PartnerBrands/>
+        <PricingPlans/>
         <HostingServices/>
         <Stats/>
         <Features/>
@@ -31,3 +33,4 @@ export default function Home() {
     </div>
   );
 }
+
