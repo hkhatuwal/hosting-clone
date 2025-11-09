@@ -18,31 +18,31 @@ export default function Stats() {
   ];
 
   return (
-    <section className="stats relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <section className="stats relative py-12 md:py-16 lg:py-24 xl:py-32 px-4 sm:px-6 lg:px-8">
       {/* Background image will be added here later */}
 
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-12 md:mb-16 lg:mb-20 text-start">
+        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 lg:mb-16 xl:mb-20 text-start">
           The stats speak for themselves.
         </h2>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 xl:gap-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-left">
               {/* Number */}
-              <div className="text-[#7FFF00] text-5xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <div className="text-[#7FFF00] text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4">
                 {stat.number}
               </div>
               
               {/* Main Description */}
-              <h3 className="text-white text-md md:text-xl font-semibold mb-3">
+              <h3 className="text-white text-base md:text-lg lg:text-xl font-semibold mb-2 md:mb-3">
                 {stat.main}
               </h3>
               
               {/* Detailed Description */}
-              <p className="text-white text-base md:text-md mb-6 opacity-90">
+              <p className="text-white text-sm md:text-base mb-4 md:mb-6 opacity-90">
                 {stat.description}
               </p>
               

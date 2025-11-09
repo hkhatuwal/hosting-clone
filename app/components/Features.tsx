@@ -29,31 +29,31 @@ export default function Features() {
     ];
 
     return (
-        <div className="w-full bg-green-50 py-20">
-            <div className="max-w-3xl lg:container mx-auto px-12">
+        <div className="w-full bg-green-50 py-12 md:py-20">
+            <div className="max-w-3xl lg:container mx-auto px-4 md:px-12">
                 {/* Section Heading */}
-                <h2 className="text-5xl lg:text-5xl font-display  font-semibold text-black mb-12 max-w-4xl">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-semibold text-black mb-8 md:mb-12 max-w-4xl">
                     Features built for better hosting, with hosting.com
                 </h2>
 
                 {/* Feature Cards Grid */}
-                <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:grid-cols-4">
                     {features.map((feature, index) => {
                         return (
                             <div
                                 key={index}
-                                className="bg-white rounded-2xl p-8 "
+                                className="bg-white rounded-2xl p-6 md:p-8"
                             >
                                 {/* Icon */}
-                                <Image src={feature.icon} width={48} height={48} alt={feature.title}/>
+                                <Image src={feature.icon} width={40} height={40} className="w-10 h-10 md:w-12 md:h-12" alt={feature.title}/>
 
                                 {/* Title */}
-                                <h3 className="text-2xl  text-gray-900 mb-4 mt-3">
+                                <h3 className="text-lg md:text-xl lg:text-2xl text-gray-900 mb-3 md:mb-4 mt-3">
                                     {feature.title}
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                                     {feature.description}
                                 </p>
                             </div>

@@ -35,15 +35,15 @@ export default function BehindTheBrand() {
 
     
     return (
-        <div className="w-full bg-[#1a3030] py-20 overflow-hidden">
-            <div className="max-w-7xl lg:container mx-auto px-6 lg:px-12">
+        <div className="w-full bg-[#1a3030] py-12 md:py-20 overflow-hidden">
+            <div className="max-w-7xl lg:container mx-auto px-4 md:px-6 lg:px-12">
                 {/* Header with Navigation */}
-                <div className="flex justify-between items-start mb-12">
+                <div className="flex flex-col md:flex-row justify-between items-start mb-8 md:mb-12 gap-4">
                     <div className="max-w-2xl">
-                        <h2 className="text-5xl font-display font-semibold text-white mb-6">
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-semibold text-white mb-4 md:mb-6">
                             Who's behind the brand
                         </h2>
-                        <p className="text-lg text-white leading-relaxed">
+                        <p className="text-base md:text-lg text-white leading-relaxed">
                             Hosting.com is built by people who believe hosting should be as reliable as the technology 
                             behind it. We combine decades of industry experience with a forward-thinking approach, creating 
                             solutions that work for businesses of every size. From first-time site owners to global enterprises, 
@@ -52,7 +52,7 @@ export default function BehindTheBrand() {
                     </div>
 
                     {/* Navigation Arrows */}
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 self-end md:self-start">
                         <button
                             onClick={prevSlide}
                             className="cursor-pointer w-12 h-12 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors"
@@ -71,7 +71,7 @@ export default function BehindTheBrand() {
                 </div>
 
                 {/* Slider Container */}
-                <div className="relative ">
+                <div className="relative">
                     <div
                         className="flex transition-transform duration-500 ease-in-out"
                         style={{transform: `translateX(-${currentSlide * 100}%)`}}
@@ -79,11 +79,11 @@ export default function BehindTheBrand() {
                         {slides.map((slide, index) => (
                             <div
                                 key={index}
-                                className="w-full flex-shrink-0 px-2"
+                                className="w-full flex-shrink-0 px-1 md:px-2"
                             >
-                                <div className="grid lg:grid-cols-2 gap-0 bg-[#f8f7f4] rounded-3xl overflow-hidden">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-[#f8f7f4] rounded-3xl overflow-hidden">
                                     {/* Left Panel - Image */}
-                                    <div className="col-span-1 flex overflow-hidden h-[500px]">
+                                    <div className="col-span-1 flex overflow-hidden h-[250px] md:h-[400px] lg:h-[500px]">
                                         <Image
                                             src={slide.image}
                                             alt={slide.tag}
@@ -94,31 +94,31 @@ export default function BehindTheBrand() {
                                     </div>
 
                                     {/* Right Panel - Text Content */}
-                                    <div className="flex flex-col justify-between col-span-1 p-8 lg:p-12">
+                                    <div className="flex flex-col justify-between col-span-1 p-6 md:p-8 lg:p-12">
                                         <div>
                                             {/* Tag */}
-                                            <div className="inline-block mb-6">
-                                                <span className="px-6 py-2 border-2 border-gray-900 rounded-full text-sm font-medium text-gray-900">
+                                            <div className="inline-block mb-4 md:mb-6">
+                                                <span className="px-4 md:px-6 py-2 border-2 border-gray-900 rounded-full text-xs md:text-sm font-medium text-gray-900">
                                                     {slide.tag}
                                                 </span>
                                             </div>
                                             
                                             {/* Description */}
-                                            <p className="text-lg leading-relaxed text-gray-900">
+                                            <p className="text-sm md:text-base lg:text-lg leading-relaxed text-gray-900">
                                                 {slide.description}
                                             </p>
                                         </div>
 
                                         {/* Button */}
-                                        <div className="mt-8">
+                                        <div className="mt-6 md:mt-8">
                                             <button
-                                                className="group cursor-pointer flex gap-2 items-center bg-gradient-to-r from-emerald-400 to-lime-400 hover:from-emerald-500 hover:to-lime-500 text-teal-950 font-medium py-3 px-6 rounded-lg transition-all duration-300"
+                                                className="group cursor-pointer flex gap-2 items-center bg-gradient-to-r from-emerald-400 to-lime-400 hover:from-emerald-500 hover:to-lime-500 text-teal-950 font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-all duration-300 text-sm md:text-base"
                                             >
                                                 Read more
                                                 <span
                                                     className="inline-block w-0 overflow-hidden -translate-x-2 opacity-0 transition-all duration-300 group-hover:w-5 group-hover:translate-x-0 group-hover:opacity-100"
                                                 >
-                                                    <ArrowRight className="w-5 h-5" />
+                                                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                                                 </span>
                                             </button>
                                         </div>

@@ -34,28 +34,28 @@ const HostingServices = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Heading Section */}
-        <div className="text-start mb-12">
-          <h2 className="text-4xl md:text-4xl font-semiboldtext-black mb-4 max-w-lg text-black">
+        <div className="text-start mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-3 md:mb-4 max-w-lg">
             Website hosting built for success
           </h2>
-          <p className="text-lg text-black max-w-xl ">
+          <p className="text-base md:text-lg text-black max-w-xl">
             The premium hosting services you need to build a fast and successful website. 
             Get started with web hosting in just minutes.
           </p>
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service) => (
             <div 
               key={service.id} 
-              className="bg-white rounded-xl  overflow-hidden "
+              className="bg-white rounded-xl overflow-hidden"
             >
               {/* Image Container with Fixed Height */}
-              <div className={`relative lg:h-48 h-64`}>
+              <div className="relative h-48 md:h-56 lg:h-48">
                 <div className="relative w-full h-full">
                   <Image
                     src={service.image}
@@ -67,17 +67,17 @@ const HostingServices = () => {
               </div>
 
               {/* Content Section */}
-              <div className="py-3 flex flex-col h-[280px]">
-                <h3 className="text-xl text-black mb-3">
+              <div className="py-3 px-2 flex flex-col min-h-[240px] md:min-h-[260px] lg:min-h-[280px]">
+                <h3 className="text-lg md:text-xl text-black mb-2 md:mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm text-black mb-6 flex-grow">
+                <p className="text-xs md:text-sm text-black mb-4 md:mb-6 flex-grow">
                   {service.description}
                 </p>
                 
                 {/* Read More Button */}
               <div>
-                  <button className="inline bg-gradient-to-r to-lime-400 from-emerald-400 hover:from-lime-500 hover:to-emerald-500 text-teal-950 font-medium py-3 px-6 rounded-lg transition-all duration-300">
+                  <button className="inline bg-gradient-to-r to-lime-400 from-emerald-400 hover:from-lime-500 hover:to-emerald-500 text-teal-950 font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-all duration-300 text-sm md:text-base">
                       Read more
                   </button>
               </div>

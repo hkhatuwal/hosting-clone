@@ -55,35 +55,35 @@ export default function BuiltByExperts() {
     };
 
     return (
-        <div className="w-full bg-white   py-20 ">
-            <div className="max-w-3xl lg:container mx-auto px-6 lg:px-12">
+        <div className="w-full bg-white py-12 md:py-20">
+            <div className="max-w-3xl lg:container mx-auto px-4 md:px-6 lg:px-12">
                 {/* Section Heading and Description */}
-                <div className="mb-12 max-w-5xl">
-                    <h2 className="text-5xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                <div className="mb-8 md:mb-12 max-w-5xl">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 md:mb-6">
                         Built by experts for experts
                     </h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
+                    <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         We keep your site fast, stable, and ready for whatever's next. Every plan runs on serious hardware AMD EPYC processors, Samsung NVMe storage, and Anycast DNS. Built to scale, so you're covered whether it's a personal blog or a global ecommerce empire.
                     </p>
                 </div>
 
                 {/* Feature Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                            className="bg-emerald-50 rounded-xl p-5 md:p-6 hover:shadow-lg transition-shadow"
                         >
                             {/* Badge */}
                             {renderBadge(feature.badge, feature.badgeType)}
 
                             {/* Title */}
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">
+                            <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                                 {feature.title}
                             </h3>
 
                             {/* Description */}
-                            <p className="text-gray-600 leading-relaxed text-sm">
+                            <p className="text-gray-600 leading-relaxed text-xs md:text-sm">
                                 {feature.description}
                             </p>
                         </div>

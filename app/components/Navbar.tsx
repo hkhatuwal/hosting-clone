@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import {CircleUser, ShoppingCart, Phone, ChevronDown, ArrowUpRight} from "lucide-react";
+import {CircleUser, ShoppingCart, Phone, ChevronDown, ArrowUpRight, Menu, X} from "lucide-react";
 import {Facebook, Linkedin, Instagram} from "lucide-react";
 import { Globe, Server, HardDrive, Database, Shield, FileText, Video, HelpCircle, Users, Lock, Cloud, RefreshCw, Palette, Box, LucideIcon } from "lucide-react";
 import BadgeNew from "@/app/components/BadgeNew";
@@ -185,6 +185,7 @@ const dropdownContent = {
 
 export default function  Navbar()  {
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     const handleMouseEnter = (dropdown: string) => {
@@ -207,7 +208,7 @@ export default function  Navbar()  {
         <>
           <div className="flex flex-col items-center w-full ">
               {/* Promotional Banner */}
-              <div className="w-full bg-black text-white text-center py-5 px-4 text-sm ">
+              <div className="w-full bg-black text-white text-center py-3 md:py-5 px-4 text-xs md:text-sm ">
                   <p className="container m-auto">
                       It's Black Friday! Try{" "}
                       <a href="/hosting" className="underline hover:text-gray-300">
@@ -217,9 +218,9 @@ export default function  Navbar()  {
                   </p>
               </div>
 
-              {/* Utility Bar */}
-              <div className="w-full bg-gray-100 border-b border-gray-200">
-                  <div className="flex justify-between items-center px-12 py-4 text-sm container m-auto">
+              {/* Utility Bar - Hidden on mobile */}
+              <div className="w-full bg-gray-100 border-b border-gray-200 hidden md:block">
+                  <div className="flex justify-between items-center px-4 lg:px-12 py-4 text-sm container m-auto">
                       {/* Social Media Icons */}
                       <div className="flex gap-4 items-center">
                           <a href="/hosting" className="hover:text-gray-600 transition-colors">
@@ -262,13 +263,14 @@ export default function  Navbar()  {
 
               {/* Main Navbar */}
               <div className="w-full relative">
-                  <ul className="flex justify-between items-center flex-wrap w-full p-4 px-12 container m-auto">
+                  <ul className="flex justify-between items-center flex-wrap w-full p-4 px-4 lg:px-12 container m-auto">
                       <li className="log flex justify-center items-center gap-1 ">
                           <Image src={"/assets/images/logo.png"} width={30} height={30} alt="Logo" />
-                          <h3 className={'text-2xl font-semibold'}>hosting.com</h3>
+                          <h3 className={'text-xl md:text-2xl font-semibold'}>hosting.com</h3>
                       </li>
 
-                      <li className={"links "}>
+                      {/* Desktop Navigation */}
+                      <li className={"links hidden lg:block"}>
                           <ul className="flex gap-6">
                               <li 
                                   className="cursor-pointer relative py-2 hover:text-gray-600 transition-colors"
@@ -301,20 +303,56 @@ export default function  Navbar()  {
                           </ul>
                       </li>
 
-                      <li className="action flex gap-6" >
+                      {/* Desktop Actions */}
+                      <li className="action hidden lg:flex gap-6" >
                           <ShoppingCart className="cursor-pointer hover:text-gray-600 transition-colors" />
                           <CircleUser className="cursor-pointer hover:text-gray-600 transition-colors" />
                       </li>
+
+                      {/* Mobile Menu Button */}
+                      <li className="lg:hidden">
+                          <button 
+                              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                              aria-label="Toggle menu"
+                          >
+                              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                          </button>
+                      </li>
                   </ul>
 
-                  {/* Dropdown Menu */}
+                  {/* Mobile Menu */}
+                  {mobileMenuOpen && (
+                      <div className="lg:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t border-gray-200 z-50">
+                          <div className="p-6 space-y-4">
+                              <a href="/hosting" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
+                                  Hosting
+                              </a>
+                              <a href="/hosting" className="flex items-center gap-2 py-3 text-lg hover:text-gray-600 transition-colors border-b">
+                                  WordPress <span className="scale-75"><BadgeNew/></span>
+                              </a>
+                              <a href="/hosting" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
+                                  Services
+                              </a>
+                              <a href="/hosting" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
+                                  Resources
+                              </a>
+                              <div className="flex gap-6 pt-4">
+                                  <ShoppingCart className="cursor-pointer hover:text-gray-600 transition-colors" />
+                                  <CircleUser className="cursor-pointer hover:text-gray-600 transition-colors" />
+                              </div>
+                          </div>
+                      </div>
+                  )}
+
+                  {/* Dropdown Menu - Desktop Only */}
                   {activeDropdown && (
                       <div 
-                          className="absolute left-0 right-0 top-full bg-white shadow-lg border-t border-gray-200 z-50 container m-auto"
+                          className="hidden lg:block absolute left-0 right-0 top-full bg-white shadow-lg border-t border-gray-200 z-50 container m-auto"
                           onMouseEnter={() => handleMouseEnter(activeDropdown)}
                           onMouseLeave={handleMouseLeave}
                       >
-                          <div className="px-12 py-8">
+                          <div className="px-4 lg:px-12 py-8">
                               <div className="grid grid-cols-4 gap-6">
                                   {/* Hosting Categories Columns */}
                                   {dropdownContent[activeDropdown as keyof typeof dropdownContent].columns.map((column, idx) => (
