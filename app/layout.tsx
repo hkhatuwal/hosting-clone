@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     siteName: 'Premium Hosting',
     images: [
       {
-        url: '/assets/images/logo.png',
+        url: '/assets/images/hero.webp',
         width: 1200,
         height: 630,
-        alt: 'Premium Hosting Logo',
+        alt: 'Premium Hosting - Fast, Secure & Reliable Web Hosting',
       },
     ],
     locale: 'en_US',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Premium Web Hosting Services | Fast, Secure & Reliable",
     description: "Experience lightning-fast web hosting with 99.9% uptime guarantee. Get expert 24/7 support, free SSL, and automated backups.",
-    images: ['/assets/images/logo.png'],
+    images: ['/assets/images/hero.webp'],
     creator: '@premiumhosting',
   },
   robots: {
