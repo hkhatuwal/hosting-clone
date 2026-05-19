@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#182a2a] text-white">
+        <footer className="bg-[#071A1F] text-white">
             {/* Main Footer Content */}
             <div className="max-w-3xl lg:container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-12">
