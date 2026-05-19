@@ -212,7 +212,7 @@ export default function  Navbar()  {
                   <p className="container m-auto">
                       It's Black Friday! Try{" "}
                       <a href="/hosting" className="underline hover:text-gray-300">
-                          hosting.com's Managed WordPress Hosting
+                          Adlef Managed WordPress Hosting
                       </a>{" "}
                       for just $1
                   </p>
@@ -264,9 +264,8 @@ export default function  Navbar()  {
               {/* Main Navbar */}
               <div className="w-full relative">
                   <ul className="flex justify-between items-center flex-wrap w-full p-4 px-4 lg:px-12 container m-auto">
-                      <li className="log flex justify-center items-center gap-1 ">
-                          <Image src={"/assets/images/logo.png"} width={30} height={30} alt="Logo" />
-                          <h3 className={'text-xl md:text-2xl font-semibold'}>hosting.com</h3>
+                      <li className="log flex justify-center items-center">
+                          <Image src={"/assets/images/adlef-logo.png"} width={160} height={48} alt="Adlef - Fast. Reliable. Secure Hosting." className="h-8 md:h-10 w-auto" />
                       </li>
 
                       {/* Desktop Navigation */}

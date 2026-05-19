@@ -43,7 +43,7 @@ export default function SmarterTools() {
                             Smarter tools. Expert results.
                         </h2>
                         <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                            With hosting.com, you get more than space on a server you get performance, security, and the
+                            With Adlef, you get more than space on a server—you get performance, security, and the
                             confidence your site is built to last.
                         </p>
                     </div>

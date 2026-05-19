@@ -13,32 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Web Hosting Services | Fast, Secure & Reliable",
-  description: "Experience lightning-fast web hosting with 99.9% uptime guarantee. Get expert 24/7 support, free SSL, automated backups, and WordPress optimization. Start hosting your website today!",
-  keywords: ["web hosting", "WordPress hosting", "VPS hosting", "cloud hosting", "managed hosting", "website hosting", "domain hosting"],
-  authors: [{ name: "Premium Hosting" }],
-  creator: "Premium Hosting",
-  publisher: "Premium Hosting",
+  title: "Adlef | Fast, Reliable, Secure Hosting",
+  description: "Adlef delivers fast, reliable, secure hosting with 99.9% uptime, expert 24/7 support, free SSL, automated backups, and WordPress optimization.",
+  keywords: ["Adlef", "web hosting", "WordPress hosting", "VPS hosting", "cloud hosting", "managed hosting", "website hosting", "domain hosting"],
+  authors: [{ name: "Adlef" }],
+  creator: "Adlef",
+  publisher: "Adlef",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://hosting.devroox.com'),
+  metadataBase: new URL('https://adlef.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Premium Web Hosting Services | Fast, Secure & Reliable",
-    description: "Experience lightning-fast web hosting with 99.9% uptime guarantee. Get expert 24/7 support, free SSL, automated backups, and WordPress optimization.",
-    url: 'https://hosting.devroox.com',
-    siteName: 'Premium Hosting',
+    title: "Adlef | Fast, Reliable, Secure Hosting",
+    description: "Fast. Reliable. Secure hosting. Get expert 24/7 support, free SSL, automated backups, and WordPress optimization with Adlef.",
+    url: 'https://adlef.com',
+    siteName: 'Adlef',
     images: [
       {
         url: '/assets/images/hero.webp',
         width: 1200,
         height: 630,
-        alt: 'Premium Hosting - Fast, Secure & Reliable Web Hosting',
+        alt: 'Adlef - Fast, Reliable, Secure Hosting',
       },
     ],
     locale: 'en_US',
@@ -46,10 +46,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Premium Web Hosting Services | Fast, Secure & Reliable",
-    description: "Experience lightning-fast web hosting with 99.9% uptime guarantee. Get expert 24/7 support, free SSL, and automated backups.",
+    title: "Adlef | Fast, Reliable, Secure Hosting",
+    description: "Fast. Reliable. Secure hosting. Expert 24/7 support, free SSL, and automated backups with Adlef.",
     images: ['/assets/images/hero.webp'],
-    creator: '@premiumhosting',
+    creator: '@adlef',
   },
   robots: {
     index: true,
@@ -64,17 +64,17 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/assets/images/logo.png' },
-      { url: '/assets/images/logo.png', sizes: '32x32', type: 'image/png' },
-      { url: '/assets/images/logo.png', sizes: '16x16', type: 'image/png' },
+      { url: '/assets/images/adlef-logo.png' },
+      { url: '/assets/images/adlef-logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/assets/images/adlef-logo.png', sizes: '16x16', type: 'image/png' },
     ],
     apple: [
-      { url: '/assets/images/logo.png' },
+      { url: '/assets/images/adlef-logo.png' },
     ],
     other: [
       {
         rel: 'apple-touch-icon',
-        url: '/assets/images/logo.png',
+        url: '/assets/images/adlef-logo.png',
       },
     ],
   },

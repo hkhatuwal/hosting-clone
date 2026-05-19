@@ -29,8 +29,8 @@ export default function HeroHosting() {
                         <div className="space-y-4 md:space-y-6">
                             {/* Main Heading */}
                             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
-                                Fast, reliable,<br/>
-                                secure web hosting
+                                Fast. Reliable.<br/>
+                                Secure hosting.
                             </h1>
 
                             {/* Descriptive Paragraph */}

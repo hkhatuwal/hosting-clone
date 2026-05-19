@@ -118,7 +118,7 @@ export default function Hero() {
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0 text-gray-400 text-sm font-mono whitespace-pre-wrap">
-                        {Array(50).fill('COM// BLACK FRIDAY ').join('\n')}
+                        {Array(50).fill('ADLEF// ').join('\n')}
                     </div>
                 </div>
 

@@ -44,7 +44,7 @@ export default function BehindTheBrand() {
                             Who's behind the brand
                         </h2>
                         <p className="text-base md:text-lg text-white leading-relaxed">
-                            Hosting.com is built by people who believe hosting should be as reliable as the technology 
+                            Adlef is built by people who believe hosting should be as reliable as the technology 
                             behind it. We combine decades of industry experience with a forward-thinking approach, creating 
                             solutions that work for businesses of every size. From first-time site owners to global enterprises, 
                             we've got the tech and the team to support you.

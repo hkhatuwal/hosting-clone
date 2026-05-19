@@ -13,7 +13,7 @@ export default function Features() {
         {
             icon: "/assets/images/crew-support.png",
 
-            title: "Guru crew support",
+            title: "Expert support",
             description: "Our in-house team is available 24/7/365. Real people ready to help, whether it's 3 p.m. or 3 a.m."
         },
         {
@@ -33,7 +33,7 @@ export default function Features() {
             <div className="max-w-3xl lg:container mx-auto px-4 md:px-12">
                 {/* Section Heading */}
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-semibold text-black mb-8 md:mb-12 max-w-4xl">
-                    Features built for better hosting, with hosting.com
+                    Features built for better hosting, with Adlef
                 </h2>
 
                 {/* Feature Cards Grid */}

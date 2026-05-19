@@ -12,7 +12,7 @@ export default function TechSupport() {
                          We're always here
                         </h2>
                         <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-8">
-                            Our expert hosting.com engineers are available 24/7, bringing deep 
+                            Our expert Adlef engineers are available 24/7, bringing deep 
                             technical knowledge to help you choose the right plan, configure it 
                             for peak performance, and keep your site running flawlessly.
                         </p>

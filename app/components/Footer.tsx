@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="lg:col-span-4 space-y-4 md:space-y-6">
                         {/* Logo */}
                         <div className="flex items-center space-x-2">
-                            <Image src={"/assets/images/logo-light.png"} alt="Logo" width={180} height={40} className="md:w-[220px] md:h-[48px]"/>
+                            <Image src={"/assets/images/adlef-logo.png"} alt="Adlef - Fast. Reliable. Secure Hosting." width={220} height={56} className="md:w-[260px] md:h-[64px] w-auto h-auto"/>
                         </div>
 
                         {/* Trustpilot Rating */}
@@ -38,25 +38,17 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Including Section */}
-                        <div className="space-y-2 md:space-y-3">
-                            <div className="text-xs md:text-sm text-gray-400">Including</div>
-                            <div className="flex gap-2 flex-wrap">
-                                {/* A2 Hosting Logo Placeholder */}
-                                <Image src={"/assets/images/a2-hosting.png"} alt="Logo" width={120} height={36} className="md:w-[160px] md:h-[48px]"/>
-                                {/* Kenya Website Experts Logo Placeholder */}
-                                <Image src={"/assets/images/keny-hosting.png"} alt="Logo" width={120} height={36} className="md:w-[160px] md:h-[48px]"/>
-
-                            </div>
-                        </div>
+                        <p className="text-xs md:text-sm text-gray-400 tracking-wide">
+                            FAST. RELIABLE. SECURE HOSTING.
+                        </p>
 
                         {/* Contact Info */}
                         <div className="space-y-2">
                             <div>
                                 <div className="font-bold text-xs md:text-sm">Support</div>
-                                <a href="mailto:support@hosting.com"
+                                <a href="mailto:support@adlef.com"
                                    className="text-gray-300 hover:text-[#00d95f] transition-colors text-xs md:text-sm">
-                                    support@hosting.com
+                                    support@adlef.com
                                 </a>
                             </div>
                             <div>
@@ -171,7 +163,7 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         {/* Copyright */}
                         <div className="text-xs md:text-sm text-gray-400">
-                            © 2025 hosting.com. All rights reserved.
+                            © 2025 Adlef. All rights reserved.
                         </div>
 
                         {/* Social Media Icons */}

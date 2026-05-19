@@ -6,18 +6,18 @@ import Image from "next/image";
 export default function Testimonials() {
     const testimonials = [
         {
-            title: "I love hosting.com",
-            review: "Best internet support I have had since 1993 when internet first went public, I have been through several hosts with my media company and school and hosting.com support staff are knowledgeable, thorough, pleasant and treat clients with respect and understanding. I can't say enough. Keep up the great work. Thank you for saving my domains and email from hackers.",
+            title: "I love Adlef",
+            review: "Best internet support I have had since 1993 when internet first went public. I have been through several hosts with my media company and school, and Adlef support staff are knowledgeable, thorough, pleasant, and treat clients with respect and understanding. I can't say enough. Keep up the great work. Thank you for saving my domains and email from hackers.",
             rating: 5
         },
         {
-            title: "Hosting.com as an alternative to Hostgator",
-            review: "I had tons of troubles with Hostgator and decided to move 6 months earlier. Hosting.com (previously A2 Hosting) was a price match but I was also looking for cPanel and cPanel migration and a few other features. I am super happy with the speed of my websites and support desk seem to be A class. Hostgator was good only at the beginning, in the past two years everything has gone south bit by bit. I can provide screenshots of the mistakes and answers from Hostgator customer support for what I say here",
+            title: "Adlef as an alternative to Hostgator",
+            review: "I had tons of troubles with Hostgator and decided to move 6 months earlier. Adlef was a price match, but I was also looking for cPanel, cPanel migration, and a few other features. I am super happy with the speed of my websites and the support desk seems to be A class. Hostgator was good only at the beginning—in the past two years everything has gone south bit by bit.",
             rating: 5
         },
         {
             title: "This is my second Reseller program",
-            review: "This is my second Reseller program, along with maintaining a few individual sites for friends, and I'm again glad I've gone with hosting.com (formerly A2). I've had a few hiccups on my end but the important thing, your people have been incredibly helpful. Timely and helpful communication. Issues can always pop-up of course, but it's how well people work to resolve them that matters to me.",
+            review: "This is my second Reseller program, along with maintaining a few individual sites for friends, and I'm again glad I've gone with Adlef. I've had a few hiccups on my end, but the important thing is your people have been incredibly helpful. Timely and helpful communication. Issues can always pop up, of course, but it's how well people work to resolve them that matters to me.",
             rating: 5
         }
     ];

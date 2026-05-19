@@ -42,7 +42,7 @@ const HostingServices = () => {
             Website hosting built for success
           </h2>
           <p className="text-base md:text-lg text-black max-w-xl">
-            The premium hosting services you need to build a fast and successful website. 
+            The Adlef hosting services you need to build a fast and successful website. 
             Get started with web hosting in just minutes.
           </p>
         </div>

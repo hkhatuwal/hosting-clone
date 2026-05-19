@@ -32,7 +32,7 @@ export default function BuiltByExperts() {
             badge: "99%",
             badgeType: "text",
             title: "99.9% uptime commitment",
-            description: "Hosting.com is the host you can depend on with ultra-reliable servers."
+            description: "Adlef is the host you can depend on with ultra-reliable servers."
         }
     ];
 
