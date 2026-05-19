@@ -1,7 +1,8 @@
 'use client';
 
 import Image from "next/image";
-import {CircleUser, ShoppingCart, Phone, ChevronDown, ArrowUpRight, Menu, X} from "lucide-react";
+import {ShoppingCart, Phone, ChevronDown, ArrowUpRight, Menu, X} from "lucide-react";
+import AuthControls from "@/app/components/AuthControls";
 import {Facebook, Linkedin, Instagram} from "lucide-react";
 import { Globe, Server, HardDrive, Database, Shield, FileText, Video, HelpCircle, Users, Lock, Cloud, RefreshCw, Palette, Box, LucideIcon } from "lucide-react";
 import BadgeNew from "@/app/components/BadgeNew";
@@ -303,9 +304,9 @@ export default function  Navbar()  {
                       </li>
 
                       {/* Desktop Actions */}
-                      <li className="action hidden lg:flex gap-6" >
+                      <li className="action hidden lg:flex items-center gap-6">
                           <ShoppingCart className="cursor-pointer hover:text-gray-600 transition-colors" />
-                          <CircleUser className="cursor-pointer hover:text-gray-600 transition-colors" />
+                          <AuthControls />
                       </li>
 
                       {/* Mobile Menu Button */}
@@ -336,9 +337,9 @@ export default function  Navbar()  {
                               <a href="/hosting" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
                                   Resources
                               </a>
-                              <div className="flex gap-6 pt-4">
+                              <div className="flex flex-col gap-4 pt-4">
+                                  <AuthControls />
                                   <ShoppingCart className="cursor-pointer hover:text-gray-600 transition-colors" />
-                                  <CircleUser className="cursor-pointer hover:text-gray-600 transition-colors" />
                               </div>
                           </div>
                       </div>
