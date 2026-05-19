@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     siteName: 'Adlef',
     images: [
       {
-        url: '/assets/images/hero.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Adlef - Fast, Reliable, Secure Hosting',
+        url: '/assets/images/graph.png',
+        width: 1254,
+        height: 1254,
+        alt: 'Adlef hosting — fast, reliable, secure hosting with 99.9% uptime and 24/7 support',
       },
     ],
     locale: 'en_US',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Adlef | Fast, Reliable, Secure Hosting",
     description: "Fast. Reliable. Secure hosting. Expert 24/7 support, free SSL, and automated backups with Adlef.",
-    images: ['/assets/images/hero.webp'],
+    images: ['/assets/images/graph.png'],
     creator: '@adlef',
   },
   robots: {
