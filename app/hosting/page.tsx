@@ -12,12 +12,15 @@ import BehindTheBrand from "@/app/components/BehindTheBrand";
 import TechSupport from "@/app/components/TechSupport";
 import BlogPosts from "@/app/components/BlogPosts";
 import Footer from "@/app/components/Footer";
+import { getHostingHero } from "@/lib/laravel/hosting-hero";
 
-export default function HostingPage() {
+export default async function HostingPage() {
+  const hero = await getHostingHero();
+
   return (
     <div className="flex flex-col min-h-screen font-display">
         <Navbar/>
-        <HeroHosting/>
+        <HeroHosting hero={hero} />
         <PartnerBrands/>
         <PricingPlans/>
         <HostingServices/>

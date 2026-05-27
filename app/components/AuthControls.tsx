@@ -6,6 +6,7 @@ import {
   Show,
   UserButton,
 } from "@clerk/nextjs";
+import HostingDashboardButton from "@/app/components/HostingDashboardButton";
 
 export default function AuthControls() {
   return (
@@ -29,6 +30,7 @@ export default function AuthControls() {
         </SignUpButton>
       </Show>
       <Show when="signed-in">
+        <HostingDashboardButton />
         <UserButton
           appearance={{
             elements: {

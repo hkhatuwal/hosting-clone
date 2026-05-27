@@ -18,12 +18,14 @@ const dropdownContent = {
                     {
                         title: "Web Hosting",
                         description: "Feature-rich cPanel & one-click tools",
-                        icon: Globe
+                        icon: Globe,
+                        href: "/hosting"
                     },
                     {
                         title: "Hosting for WordPress",
                         description: "Optimized WordPress hosting for growth",
-                        icon: Box
+                        icon: Box,
+                        href: "/wordpress"
                     },
                     {
                         title: "Reseller Hosting",
@@ -38,12 +40,14 @@ const dropdownContent = {
                     {
                         title: "Managed VPS Hosting",
                         description: "Zero server hassle, 100% managed for you",
-                        icon: Server
+                        icon: Server,
+                        href: "/vps"
                     },
                     {
                         title: "VPS Hosting (root access)",
                         description: "Full root access, full control",
-                        icon: Database
+                        icon: Database,
+                        href: "/vps"
                     }
                 ]
             },
@@ -76,7 +80,8 @@ const dropdownContent = {
                     {
                         title: "Managed WordPress",
                         description: "Optimized for speed and security",
-                        icon: Box
+                        icon: Box,
+                        href: "/wordpress"
                     },
                     {
                         title: "WordPress Pro",
@@ -326,9 +331,12 @@ export default function  Navbar()  {
                       <div className="lg:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t border-gray-200 z-50">
                           <div className="p-6 space-y-4">
                               <a href="/hosting" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
-                                  Hosting
+                                  Web Hosting
                               </a>
-                              <a href="/hosting" className="flex items-center gap-2 py-3 text-lg hover:text-gray-600 transition-colors border-b">
+                              <a href="/vps" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
+                                  VPS Hosting
+                              </a>
+                              <a href="/wordpress" className="flex items-center gap-2 py-3 text-lg hover:text-gray-600 transition-colors border-b">
                                   WordPress <span className="scale-75"><BadgeNew/></span>
                               </a>
                               <a href="/hosting" className="block py-3 text-lg hover:text-gray-600 transition-colors border-b">
@@ -361,10 +369,11 @@ export default function  Navbar()  {
                                           <div className="space-y-3">
                                               {column.items.map((item, itemIdx) => {
                                                   const IconComponent = item.icon;
+                                                  const itemHref = 'href' in item && item.href ? item.href : '/hosting';
                                                   return (
                                                       <a 
                                                           key={itemIdx}
-                                                          href="/hosting" 
+                                                          href={itemHref}
                                                           className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-200 transition-colors group"
                                                       >
                                                           <div className="flex items-start gap-3">
